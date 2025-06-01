@@ -72,7 +72,11 @@ const MOCK_ITEM = {
   ],
 };
 
-export default function ItemDetailPage({ params }: { params: { id: string } }) {
+interface ItemPageProps {
+  id: string;
+}
+
+function ItemDetail({ id }: ItemPageProps) {
   const [selectedImage, setSelectedImage] = useState(0);
   
   // In a real application, you would fetch the item data based on the ID
@@ -270,4 +274,9 @@ function translateCategory(category: string): string {
   };
   
   return categoryMap[category] || category;
+}
+
+export default async function ItemPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
+  return <ItemDetail id={id} />;
 } 

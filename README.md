@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 이 프로젝트는 [`EasyNext`](https://github.com/easynext/easynext)를 사용해 생성된 [Next.js](https://nextjs.org) 프로젝트입니다.
 
 ## Getting Started
@@ -90,3 +91,6 @@ easynext sentry
 # Google Adsense
 easynext adsense
 ```
+=======
+# first_page
+>>>>>>> 10dab5c2d015db1c259a0513b61ab8ee90d574df
